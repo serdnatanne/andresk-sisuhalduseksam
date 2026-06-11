@@ -146,3 +146,49 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* Dark mode */
+body.dark-mode {
+    --main: #4cc9f0;
+    --dark: #0b1320;
+    --light: #14213d;
+    --accent: #ffd166;
+    --text: #f5f5f5;
+
+    background: #0b1320;
+    color: var(--text);
+}
+
+body.dark-mode .card,
+body.dark-mode .news-item,
+body.dark-mode .contact-box {
+    background: #14213d;
+    border-color: #263859;
+}
+
+body.dark-mode .site-header,
+body.dark-mode .site-footer {
+    background: #050914;
+}
+
+body.dark-mode a {
+    color: #90e0ef;
+}
+
+body.dark-mode .button {
+    color: #111;
+}
+
+.theme-toggle {
+    background: var(--accent);
+    color: #111;
+    border: 0;
+    border-radius: 6px;
+    padding: 9px 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    opacity: 0.9;
+}

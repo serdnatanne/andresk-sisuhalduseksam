@@ -18,5 +18,9 @@
             <a href="<?php echo esc_url(home_url('/uudised')); ?>">Uudised</a>
             <a href="<?php echo esc_url(home_url('/kontakt')); ?>">Kontakt</a>
         </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Vaheta hele ja tume vaade">
+            Tume vaade
+        </button>
     </div>
 </header>
