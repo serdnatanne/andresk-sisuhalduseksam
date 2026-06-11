@@ -13,24 +13,11 @@
 
 <section class="section">
     <div class="container">
-        <h2>Meie treeningud</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Ujumistreeningud</h3>
-                <p>Treeningud algajatele ja edasijõudnutele professionaalse juhendaja käe all.</p>
-            </div>
-
-            <div class="card">
-                <h3>Üldfüüsiline ettevalmistus</h3>
-                <p>Arendame vastupidavust, jõudu ja liikuvust läbi mitmekesiste harjutuste.</p>
-            </div>
-
-            <div class="card">
-                <h3>Võistlusgrupp</h3>
-                <p>Ettevalmistus kohalikel ja rahvuslikel võistlustel osalemiseks.</p>
-            </div>
-        </div>
+        <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
+                <?php the_content(); ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
     </div>
 </section>
 
