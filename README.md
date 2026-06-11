@@ -59,3 +59,9 @@ Et stiil ja saidi kujundus on eelnevalt lokaalselt testitud ja katestatud enne p
 
 12. Teen pisiparandusi ja pisemaid modifikatsioone
    **Aeg:** kuni esitluseni
+
+
+## Kuidas läks
+
+ddev+lokaalne wordpress püstipanek minujaoks väga lihtne. Sama käis ka zone domeeni sees püstipaneku kohta - andmebaasi osa oli ka lihtne kuna tegime korra läbi.
+Ajalise surve tõttu panin rõhku AI kasutusele. Kuna põhi raamistik tuli AI'st ja siis ma kergelt korrigeerisin - unustasin commitid taas ära - kuna endale sisimas oli tunne et veel vara - aga oleks võinud 4-5 commiti sinna protsessi äramahutada. Üldiselt jääb mulje, et sellise kiire AI-slop tegemise jaoks lähebki healjuhul 30minutit millest edasi saab teha midagi asjalikumat. Kuna ma lasin AIl teha esmafailid theme jaoks - siis wordpressi seest modifitseerimine oli natuke katki - tegin küll paremaks aga tundub, et tegelt oleks võinud enne wordpressis teha nagu tunnis tegime - et esmalt wordpressis ja siis vajadusel aitame AI'ga modifikatsioonidel kaasa.
