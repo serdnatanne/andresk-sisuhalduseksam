@@ -1,25 +1,20 @@
 <?php get_header(); ?>
 
-<section class="hero">
-    <div class="container">
-        <h1>Rõõmus Laine OÜ spordiklubi</h1>
-        <p>
-            Tervisesport, ujumine, rühmatreeningud ja võistlused igas vanuses liikmetele.
-            Tule trenni ja liitu rõõmsa liikumisega!
-        </p>
-        <a class="button" href="<?php echo esc_url(home_url('/kontakt')); ?>">Võta ühendust</a>
-    </div>
-</section>
+<?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-<section class="section">
-    <div class="container">
-        <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-        <?php endif; ?>
-    </div>
-</section>
+        <section class="hero">
+            <div class="container">
+                <h1><?php the_title(); ?></h1>
+                <div>
+                    <?php the_content(); ?>
+                </div>
+                <a class="button" href="<?php echo esc_url(home_url('/kontakt')); ?>">Võta ühendust</a>
+            </div>
+        </section>
+
+    <?php endwhile; ?>
+<?php endif; ?>
 
 <section class="section">
     <div class="container">
